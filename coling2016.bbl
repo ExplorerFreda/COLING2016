@@ -1,0 +1,163 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bengio \bgroup et al.\egroup
+  }2003]{bengio2003neural}
+Yoshua Bengio, R{\'e}jean Ducharme, Pascal Vincent, and Christian Jauvin.
+\newblock 2003.
+\newblock A neural probabilistic language model.
+\newblock {\em journal of machine learning research}, 3(Feb):1137--1155.
+
+\bibitem[\protect\citename{Bentivogli \bgroup et al.\egroup
+  }2004]{bentivogli2004revising}
+Luisa Bentivogli, Pamela Forner, Bernardo Magnini, and Emanuele Pianta.
+\newblock 2004.
+\newblock Revising the wordnet domains hierarchy: semantics, coverage and
+  balancing.
+\newblock In {\em Proceedings of the Workshop on Multilingual Linguistic
+  Ressources}, pages 101--108. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Chen \bgroup et al.\egroup }2014]{chen2014unified}
+Xinxiong Chen, Zhiyuan Liu, and Maosong Sun.
+\newblock 2014.
+\newblock A unified model for word sense representation and disambiguation.
+\newblock In {\em EMNLP}, pages 1025--1035. Citeseer.
+
+\bibitem[\protect\citename{Cheng and Kartsaklis}2015]{cheng2015syntax}
+Jianpeng Cheng and Dimitri Kartsaklis.
+\newblock 2015.
+\newblock Syntax-aware multi-sense word embeddings for deep compositional
+  models of meaning.
+\newblock {\em arXiv preprint arXiv:1508.02354}.
+
+\bibitem[\protect\citename{Collobert and Weston}2008]{collobert2008unified}
+Ronan Collobert and Jason Weston.
+\newblock 2008.
+\newblock A unified architecture for natural language processing: Deep neural
+  networks with multitask learning.
+\newblock In {\em Proceedings of the 25th international conference on Machine
+  learning}, pages 160--167. ACM.
+
+\bibitem[\protect\citename{Finkelstein \bgroup et al.\egroup
+  }2001]{finkelstein2001placing}
+Lev Finkelstein, Evgeniy Gabrilovich, Yossi Matias, Ehud Rivlin, Zach Solan,
+  Gadi Wolfman, and Eytan Ruppin.
+\newblock 2001.
+\newblock Placing search in context: The concept revisited.
+\newblock In {\em Proceedings of the 10th international conference on World
+  Wide Web}, pages 406--414. ACM.
+
+\bibitem[\protect\citename{Gonz{\'a}lez \bgroup et al.\egroup
+  }2012]{gonzalez2012graph}
+Aitor Gonz{\'a}lez, German Rigau, and Mauro Castillo.
+\newblock 2012.
+\newblock A graph-based method to improve wordnet domains.
+\newblock In {\em International Conference on Intelligent Text Processing and
+  Computational Linguistics}, pages 17--28. Springer.
+
+\bibitem[\protect\citename{Huang \bgroup et al.\egroup
+  }2012]{huang2012improving}
+Eric~H Huang, Richard Socher, Christopher~D Manning, and Andrew~Y Ng.
+\newblock 2012.
+\newblock Improving word representations via global context and multiple word
+  prototypes.
+\newblock In {\em Proceedings of the 50th Annual Meeting of the Association for
+  Computational Linguistics: Long Papers-Volume 1}, pages 873--882. Association
+  for Computational Linguistics.
+
+\bibitem[\protect\citename{Li and Jurafsky}2015]{li2015multi}
+Jiwei Li and Dan Jurafsky.
+\newblock 2015.
+\newblock Do multi-sense embeddings improve natural language understanding?
+\newblock {\em arXiv preprint arXiv:1506.01070}.
+
+\bibitem[\protect\citename{Liu \bgroup et al.\egroup }2015]{liu2015topical}
+Yang Liu, Zhiyuan Liu, Tat-Seng Chua, and Maosong Sun.
+\newblock 2015.
+\newblock Topical word embeddings.
+\newblock In {\em AAAI}, pages 2418--2424.
+
+\bibitem[\protect\citename{Magnini and Cavaglia}2000]{magnini2000integrating}
+Bernardo Magnini and Gabriela Cavaglia.
+\newblock 2000.
+\newblock Integrating subject field codes into wordnet.
+\newblock In {\em LREC}.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2010]{mikolov2010recurrent}
+Tomas Mikolov, Martin Karafi{\'a}t, Lukas Burget, Jan Cernock{\`y}, and Sanjeev
+  Khudanpur.
+\newblock 2010.
+\newblock Recurrent neural network based language model.
+\newblock In {\em Interspeech}, volume~2, page~3.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013a]{mikolov2013efficient}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock 2013a.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013b]{mikolov2013exploiting}
+Tomas Mikolov, Quoc~V Le, and Ilya Sutskever.
+\newblock 2013b.
+\newblock Exploiting similarities among languages for machine translation.
+\newblock {\em arXiv preprint arXiv:1309.4168}.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013c]{mikolov2013linguistic}
+Tomas Mikolov, Wen-tau Yih, and Geoffrey Zweig.
+\newblock 2013c.
+\newblock Linguistic regularities in continuous space word representations.
+\newblock In {\em HLT-NAACL}, volume~13, pages 746--751.
+
+\bibitem[\protect\citename{Miller}1995]{miller1995wordnet}
+George~A Miller.
+\newblock 1995.
+\newblock Wordnet: a lexical database for english.
+\newblock {\em Communications of the ACM}, 38(11):39--41.
+
+\bibitem[\protect\citename{Mnih and Hinton}2007]{mnih2007three}
+Andriy Mnih and Geoffrey Hinton.
+\newblock 2007.
+\newblock Three new graphical models for statistical language modelling.
+\newblock In {\em Proceedings of the 24th international conference on Machine
+  learning}, pages 641--648. ACM.
+
+\bibitem[\protect\citename{Mnih and Kavukcuoglu}2013]{mnih2013learning}
+Andriy Mnih and Koray Kavukcuoglu.
+\newblock 2013.
+\newblock Learning word embeddings efficiently with noise-contrastive
+  estimation.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  2265--2273.
+
+\bibitem[\protect\citename{Morin and Bengio}2005]{morin2005hierarchical}
+Frederic Morin and Yoshua Bengio.
+\newblock 2005.
+\newblock Hierarchical probabilistic neural network language model.
+\newblock In {\em Aistats}, volume~5, pages 246--252. Citeseer.
+
+\bibitem[\protect\citename{Neelakantan \bgroup et al.\egroup
+  }2015]{neelakantan2015efficient}
+Arvind Neelakantan, Jeevan Shankar, Alexandre Passos, and Andrew McCallum.
+\newblock 2015.
+\newblock Efficient non-parametric estimation of multiple embeddings per word
+  in vector space.
+\newblock {\em arXiv preprint arXiv:1504.06654}.
+
+\bibitem[\protect\citename{Pina and Johansson}2014]{pina2014simple}
+Luis~Nieto Pina and Richard Johansson.
+\newblock 2014.
+\newblock A simple and efficient method to generate word sense representations.
+\newblock {\em arXiv preprint arXiv:1412.6045}.
+
+\bibitem[\protect\citename{Reisinger and Mooney}2010]{reisinger2010multi}
+Joseph Reisinger and Raymond~J Mooney.
+\newblock 2010.
+\newblock Multi-prototype vector-space models of word meaning.
+\newblock In {\em Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  pages 109--117. Association for Computational Linguistics.
+
+\end{thebibliography}

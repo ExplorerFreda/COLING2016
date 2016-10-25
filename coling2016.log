@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  25 OCT 2016 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  25 OCT 2016 22:18
 entering extended mode
 **./coling2016.tex
 (coling2016.tex
@@ -152,14 +152,18 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 42.
 
-
-LaTeX Warning: No \author given.
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 57.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 42.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 67.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
@@ -191,13 +195,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [7]
 [8] (coling2016.bbl [9]) [10] (coling2016.aux) ) 
 Here is how much of TeX's memory you used:
- 2292 strings out of 493634
- 34953 string characters out of 3141315
+ 2311 strings out of 493634
+ 35268 string characters out of 3141315
  116281 words of memory out of 3000000
- 5668 multiletter control sequences out of 15000+200000
- 25185 words of font info for 62 fonts, out of 3000000 for 9000
+ 5682 multiletter control sequences out of 15000+200000
+ 26778 words of font info for 65 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,9n,38p,1281b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,38p,1281b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 
 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
@@ -213,7 +217,7 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on coling2016.pdf (10 pages, 203384 bytes).
+Output written on coling2016.pdf (10 pages, 206188 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

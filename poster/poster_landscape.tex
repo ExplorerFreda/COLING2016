@@ -9,6 +9,7 @@
 \usepackage{rotating}
 \usepackage{bm}
 \usepackage{url}
+\usepackage{setspace}
 
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -129,7 +130,7 @@
   headershape=roundedright,
   headershade=shadelr,
   headerfont=\Large\bf\textsc, %Sans Serif
-  textfont={\setlength{\parindent}{1.5em}},
+  textfont={\setlength{\parindent}{1em}},
   boxshade=plain,
 %  background=shade-tb,
   background=plain,
@@ -138,14 +139,13 @@
   % Eye Catcher
   {}
   % Title
-  {\bf{Real Multi-Sense or Pseudo Multi-Sense: An Approach to Improve Word Representation}\vspace{0.5em}}
+  {\bf{Real Multi-Sense or Pseudo Multi-Sense: An Approach to Improve Word Representation}\vspace{0.1em}}
   % Authors
-  {{Haoyue Shi, Caihua Li and Junfeng Hu} ~~~~~~~~~~~ \{hyshi, peterli, hujf\}@pku.edu.cn}
+  {{Haoyue Shi, Caihua Li and Junfeng Hu} ~~~~~~~~~~  \{hyshi, peterli, hujf\}@pku.edu.cn \\[0.1em] {School of Electronics Engineering and Computer Science, Peking University}}
   % University logo
   {% The makebox allows the title to flow into the logo, this is a hack because of the L shaped logo.
     \includegraphics[height=7.5em]{images/logo}
   }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Now define the boxes that make up the poster
 %%%---------------------------------------------------------------------------
@@ -162,35 +162,33 @@
       \tikz{\useasboundingbox (-0.2em,-0.32em) rectangle(0.2em,0.32em); \draw[draw=black,fill=lightblue,line width=0.03em] (0,0) circle(0.18em);}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Problem}{name=problem,column=0,row=0}{
+  \headerbox{Abstract}{name=abstract,column=0,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   Special effects in movies require tracks of features through scenes. Tracks are found in
-   an interactive process. The artist marks a position, and the computer
-   proposes a track which is then further refined by the artist.
-
-   This is a difficult problem due to three aspects. 
-   \begin{enumerate}\compresslist
-      \item Appearance changes due to lighting and pose
-      \item Occlusions
-      \item Speed: Interactive editing requires faster than framerate calculation
-   \end{enumerate}
+\par
+Previous researches have shown that learning multiple representations for polysemous words can improve the performance of word embeddings on many tasks. However, this leads to another problem. Several vectors of a word may actually point to the same meaning, namely pseudo multi-sense. 
+\par
+We introduce the concept of pseudo multi-sense, and then propose an algorithm to detect such cases. With the consideration of the detected pseudo multi-sense cases, we try to refine the existing word embeddings to eliminate the influence of pseudo multi-sense. Moreover, we apply our algorithm on previous released multi-sense word embeddings and tested it on artificial word similarity tasks and the analogy task. The result of the experiments shows that diminishing pseudo multi-sense can improve the quality of word representations. Thus, our method is actually an efficient way to reduce linguistic complexity for computer's natural language understanding. 
    \vspace{0.3em}
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Contributions}{name=contribution,column=1,row=0,bottomaligned=problem}{
+  \headerbox{Pseudo Multi-Sense Detection}{name=detection,column=1,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   We formulated tracking as path search in a large graph, and solve it
-   efficiently with a modificiation of Dijkstra's algorithm.  
-
-   The method is based on \cite{awf:tracking}. Our main contributions are
-   \begin{enumerate}\compresslist
-   \item Efficient incorporation of a background appearance model
-   \item Formulation as a shortest path problem
-   \item (Correct) handling of occlusions
-   \item High-Efficiency implementation with up to 150 fps for a high
-   resolution video
-   \end{enumerate}
+\noindent\textbf{\large Domain Similarity}
+\\
+\begin{equation} \label{pdomain}
+P_D(w, k, d) \propto  {\sum_{w' \in NN(w, k)} D(p(w'), d)} \nonumber
+\end{equation}
+\begin{equation}
+Sim_D(w,k,l) = \frac 1n|TopN(P_D,w,k,n) \cap TopN(P_D,w,l,n)| \nonumber
+\end{equation}
+\noindent\textbf{\large Semantic Similarity}
+\begin{equation} \label{phyper}
+P_H(w, k, h) \propto \frac{1}{d(w,h)} {\sum_{w' \in NN(w, k)} H(p(w'), h)} \cdot \frac{1}{d(p(w'),h)} \nonumber
+\end{equation}
+\begin{equation} \label{simh}
+Sim_H(w,k,l) = \frac 1n|TopN(P_H,w,k,n) \cap TopN(P_H,w,l,n)| \nonumber
+\end{equation}
    \vspace{0.3em}
   }
 
@@ -233,43 +231,32 @@
       \vspace{-0.6em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{References}{name=references,column=0,above=bottom}{
+  \headerbox{References}{name=references,column=0,span=3,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \smaller
-    \bibliographystyle{ieee}
+    \bibliographystyle{acl}
     \renewcommand{\section}[2]{\vskip 0.05em}
       \begin{thebibliography}{1}\itemsep=-0.01em
       \setlength{\baselineskip}{0.4em}
-      \bibitem{amberg11:graphtrack}
-        B.~Amberg, T. Vetter.
-        \newblock {GraphTrack}: {F}ast and {G}lobally {O}ptimal {T}racking in {V}ideos
-        \newblock In {\em CVPR '11}
-      \bibitem{awf:tracking}
-        A.~Buchanan and A.~Fitzgibbon.
-        \newblock {I}nteractive {F}eature {T}racking using {K-D} {T}rees and {D}ynamic {P}rogramming.
-        \newblock In {\em CVPR '06}
+      \bibitem{huang}
+        Eric H Huang, Richard Socher, Christopher D Manning, and Andrew Y Ng.
+        \newblock  Improving word representations via global context and multiple word prototypes.
+        \newblock In {\em ACL 2012}
+      \bibitem{neelakantan}
+		Arvind Neelakantan, Jeevan Shankar, Alexandre Passos, and Andrew McCallum.
+		\newblock  Efficient non-parametric estimation of multiple embeddings per word in vector space.
+        \newblock In {\em ACL 2014}
+	  \bibitem{wordnet}
+		George A Miller
+		\newblock Wordnet: a lexical database for English.
+		\newblock 1995, Communications of the ACM.
       \end{thebibliography}
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{A Future Direction}{name=questions,column=1,span=2,aligned=references,above=bottom}{
+  \headerbox{Acknowledgement}{name=references,column=3,aligned=references,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{multicols}{2}
-    We incorporated a background model, where a click informs us not only that `this is how the
-    patch looks like', but also for the rest of the frame, `this is how the patch
-    does not look like'. 
-    
-    Can we also \emph{efficiently} use a background tracks model, allowing us
-    to reason, `this would be a good track, but part of it can be better
-    explained by tracking another point'.
-  \end{multicols}
-   \vspace{0.3em}
-  }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Source Code}{name=references,column=3,aligned=references,above=bottom}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  The source code and compiled executables with an interactive interface are available at \\
-  \url{http://www.cs.unibas.ch/personen/amberg_brian/graphtrack}
+This work is supported by the National Natural Science Foundation of China (grant No.61472017, M1552004).
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -332,20 +319,32 @@ sessions.
    \vspace{0.0em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Method}{name=method,column=0,below=problem,bottomaligned=speed}{
+  \headerbox{Pseudo Multi-Sense}{name=pseudo multi-sense,column=0,below=abstract,bottomaligned=speed}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \indent The cost is interpreted as a directed acyclic graph
-  with weights on the nodes and edges. The nodes encode candidate positions,
-  and the edges the transition costs between candidates. Additional edges
-  (dashed) allow occlusion transitions which skip frames.
-
-  The optimal track is found with a modification of Dijkstra's shortest path
-  search. The search was speed up by lower bounding the cost, and lazily
-  evaluating the accurate cost only where necessary to find the global optimum.
+\par
+Polysemous words are ubiquitous in natural languages. For example, in the following two sentences, the word {\sl star} has different meanings, leaving all metaphorical considerations aside.
+\begin{spacing}{-0.5} \end{spacing}
+\begin{itemize}\itemsep -2pt
+\item She is a famous movie \textbf{star}.
+\item That small \textbf{star} is brightest. 
+\end{itemize}
+\par
+\begin{spacing}{0.5} \end{spacing}
+Some previous approaches have learned multiple embeddings to represent different senses of a word, discriminating the senses by their context, related syntax and topics. However, this leads to another problem. The methods may embed one sense to multiple vectors by mistake. We call such cases \textbf{pseudo multi-sense}. 
+\par
+Consider three different representations of word {\sl bear} released by \cite{neelakantan}. We show 9 nearest neighbors for each representation. Words clearly related to the domain {\sl animals} are bolded.
+\begin{spacing}{-0.5} \end{spacing}
+\begin{itemize} \itemsep -2pt
+\item emerald, \textbf{bears}, \textbf{three-toed}, \textbf{snake}, \textbf{periwinkle}, \textbf{ruffed}, \textbf{hoopoe}, distinctive, unmistakable
+\item \textbf{bird}, \textbf{wolf}, arrow, \textbf{pelican}, emerald, canyon, diamond, \textbf{buck}, \textbf{deer}
+\item pride, lady, hide, king, gift, crane, afflict, promise, reap
+\end{itemize}
+\begin{spacing}{0.5} \end{spacing}
+We could infer that the first two representations are likely to have the same meaning, namely they two are likely to form a pseudo multi-sense case. But the last representation may have different meaning with them (real multi-sense).
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Background Model}{name=background model,column=1,below=problem,bottomaligned=speed}{
+  \headerbox{Pseudo Multi-Sense Elimination}{name=background model,column=1,below=detection,bottomaligned=speed}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent\begin{tabular}{r@{\hspace{0.3em}}c@{\hspace{1.5em}}c@{}}
 & With & Without\\

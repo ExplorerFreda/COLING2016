@@ -1,0 +1,11 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Neelakantan \bgroup et al.\egroup
+  }2015]{neelakantan2015efficient}
+Arvind Neelakantan, Jeevan Shankar, Alexandre Passos, and Andrew McCallum.
+\newblock 2015.
+\newblock Efficient non-parametric estimation of multiple embeddings per word
+  in vector space.
+\newblock {\em arXiv preprint arXiv:1504.06654}.
+
+\end{thebibliography}

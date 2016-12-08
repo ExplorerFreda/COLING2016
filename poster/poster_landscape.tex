@@ -10,6 +10,7 @@
 \usepackage{bm}
 \usepackage{url}
 \usepackage{setspace}
+\usepackage{color}
 
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -175,51 +176,51 @@ We introduce the concept of pseudo multi-sense, and then propose an algorithm to
   \headerbox{Pseudo Multi-Sense Detection}{name=detection,column=1,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent\textbf{\large Domain Similarity}
-\\
+\par To determine the domain of a sense given the multi-sense word embeddings, we can intuitively define the probability that the $k^{th}$ sense of word $w$ belongs to domain $d$ as 
 \begin{equation} \label{pdomain}
 P_D(w, k, d) \propto  {\sum_{w' \in NN(w, k)} D(p(w'), d)} \nonumber
 \end{equation}
+where $NN(w,k)$ is the nearest neighbors of the $k^{th}$ sense of word $w$ in the given word embeddings, $p(w')$ is the protocol representation of word $w'$, $D(p(w'), d)$ is the sum probability that domain $d$ appears in all synsets of $p(w')$ in WordNet(\cite{wordnet}) provided by Extended WordNet Domain. Then we can compute the domain similarity between the $k^{th}$ and the $l^{th}$ sense of word $w$ by
 \begin{equation}
 Sim_D(w,k,l) = \frac 1n|TopN(P_D,w,k,n) \cap TopN(P_D,w,l,n)| \nonumber
 \end{equation}
 \noindent\textbf{\large Semantic Similarity}
-\begin{equation} \label{phyper}
-P_H(w, k, h) \propto \frac{1}{d(w,h)} {\sum_{w' \in NN(w, k)} H(p(w'), h)} \cdot \frac{1}{d(p(w'),h)} \nonumber
-\end{equation}
+\par 
+Analogously, we can define semantic similarity.
 \begin{equation} \label{simh}
 Sim_H(w,k,l) = \frac 1n|TopN(P_H,w,k,n) \cap TopN(P_H,w,l,n)| \nonumber
 \end{equation}
+where 
+\begin{equation} \label{phyper}
+P_H(w, k, h) \propto \frac{1}{d(w,h)} {\sum_{w' \in NN(w, k)} H(p(w'), h)} \cdot \frac{1}{d(p(w'),h)} \nonumber
+\end{equation}
+\noindent\textbf{\large Overall Similarity}
+\par
+We sum the domain similarity and the semantic similarity to get the overall similarity of two sense. 
+\begin{equation} \label{simall}
+Sim(w,k,l) = Sim_D(w,k,l) + Sim_H(w,k,l) \nonumber
+\end{equation}
+\par
+With a development dataset, we set a threshold $\theta$ for regarding two senses of a word as pseudo multi-sense.
+\\~\\
+\noindent\textbf{\large Detected Samples}
+\par 
+Here shows nearest neighbors three "senses" of word {\sl rock} from the released vectors in \cite{neelakantan}. 
+\begin{itemize}
+\item {\color{blue}\textbf{rock$_1$}: metal, rippling, psychedelia, bands, pop}
+\item {\color{orange}\textbf{rock$_2$}: sand, rocks, butte, ash, sandy, cedar}
+\item {\color{blue}\textbf{rock$_3$}: hip, indie, hop, reggae, roll, rock/metal}
+\end{itemize}
+Our algorithm shows that rock$_1$ and rock$_3$ are likely to be pseudo multi-sense, while rock$_2$ has a different meaning with them. 
    \vspace{0.3em}
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Results}{name=results,column=2,span=2,row=0}{
+\headerbox{Pseudo Multi-Sense Elimination}{name=elimination,column=2,span=2,row=0}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \drawvideo{5}{40}{%
-      \includegraphics[width=0.2\linewidth]{red-4-sec_000_rastered}%
-        \includegraphics[width=0.2\linewidth]{red-4-sec_024_rastered}%
-        \includegraphics[width=0.2\linewidth]{red-4-sec_048_rastered}%
-        \includegraphics[width=0.2\linewidth]{red-4-sec_072_rastered}%
-        \includegraphics[width=0.2\linewidth]{red-4-sec_095_rastered}%
-    }
-  \begin{tabular*}{\linewidth}{*{5}{@{}p{0.2\linewidth}@{}}}
-    {\hfill{}Frame 0\hfill{}} & {\hfill{}24\hfill{}} &  {\hfill{}48\hfill{}} &  {\hfill{}72\hfill{}} & {\hfill{}95\hfill{}}
-  \end{tabular*}
-  \\[1em]
-      \drawvideo{5}{40}{%
-        \includegraphics[width=0.2\linewidth]{giraffe-run-000-rastered}%
-          \includegraphics[width=0.2\linewidth]{giraffe-run-100-rastered}%
-          \includegraphics[width=0.2\linewidth]{giraffe-run-200-rastered}%
-          \includegraphics[width=0.2\linewidth]{giraffe-run-300-rastered}%
-          \includegraphics[width=0.2\linewidth]{giraffe-run-458-rastered}%
-      }
-  \begin{tabular*}{\linewidth}{*{5}{@{}p{0.2\linewidth}@{}}}
-    {\hfill{}Frame 0\hfill{}}  &
-    {\hfill{}100\hfill{}} &
-    {\hfill{}200\hfill{}} &
-    {\hfill{}300\hfill{}} &
-    {\hfill{}458\hfill{}} 
-  \end{tabular*}
+	\begin{center}
+      \includegraphics[width=0.5\linewidth]{orig}
+	  \end{center}
       \begin{multicols}{2}
     Between one and three user clicks were needed to achieve accurate tracking for
       the head sequence. Note the correct handling of the occluded ear, which
@@ -250,17 +251,22 @@ Sim_H(w,k,l) = \frac 1n|TopN(P_H,w,k,n) \cap TopN(P_H,w,l,n)| \nonumber
 		George A Miller
 		\newblock Wordnet: a lexical database for English.
 		\newblock 1995, Communications of the ACM.
+	  \bibitem{exwordnetdomain}
+	  Aitor González, German Rigau, and Mauro Castillo. 
+	  \newblock A graph-based method to improve wordnet domains.
+	  \newblock In {\em ICITPCL 2012}
       \end{thebibliography}
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Acknowledgement}{name=references,column=3,aligned=references,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+~\\[1em]
 This work is supported by the National Natural Science Foundation of China (grant No.61472017, M1552004).
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Speed}{name=speed,column=2,span=2,row=0,below=results,above=references}{
+\headerbox{Experiments}{name=experiments,column=2,span=2,row=0,below=elimination,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{multicols}{2}
 \newcommand{\basiswidth}{0.22}
@@ -319,7 +325,7 @@ sessions.
    \vspace{0.0em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Pseudo Multi-Sense}{name=pseudo multi-sense,column=0,below=abstract,bottomaligned=speed}{
+  \headerbox{Pseudo Multi-Sense}{name=pseudo multi-sense,column=0,below=abstract,bottomaligned=experiments}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \par
 Polysemous words are ubiquitous in natural languages. For example, in the following two sentences, the word {\sl star} has different meanings, leaving all metaphorical considerations aside.
@@ -344,29 +350,6 @@ We could infer that the first two representations are likely to have the same me
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Pseudo Multi-Sense Elimination}{name=background model,column=1,below=detection,bottomaligned=speed}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent\begin{tabular}{r@{\hspace{0.3em}}c@{\hspace{1.5em}}c@{}}
-& With & Without\\
-& background model & background model\\
-\begin{sideways}{\makebox[0.37\linewidth][c]{Ridge of the lips}}\end{sideways} &
-\includegraphics[width=0.40\linewidth]{candidates_lips_ridge_left_bg} &
-\includegraphics[width=0.40\linewidth]{candidates_lips_ridge_left_no_bg} \\[2em]
-%\begin{sideways}{\makebox[0.32\linewidth][c]{Flank of a giraffe}}\end{sideways} & 
-%\includegraphics[width=0.40\linewidth]{candidates_giraffes_flank_bg}&
-%\includegraphics[width=0.40\linewidth]{candidates_giraffes_flank_no_bg}\\
-\end{tabular}
-  \indent We incorporate a background model, such that a click tells us not only `this
-  is how the landmark looks like', but also `this is how the landmark
-  does \emph{not} look like' for all other patches in that frame.
-
-  The figure contrasts the per frame evidence for each candidate patch with and
-  without a background model. Using the background model makes the correct
-  patch probable enough, that it is chosen. But note that global reasoning over
-  the entire path is still necessary, as the correct patch is not the most
-  probable patch in this frame.
-   \vspace{0.3em}
-  }
 
 \end{poster}
 

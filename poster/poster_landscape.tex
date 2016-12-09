@@ -10,7 +10,10 @@
 \usepackage{bm}
 \usepackage{url}
 \usepackage{setspace}
+\usepackage{caption}
 \usepackage{color}
+\DeclareMathOperator*{\argmax}{argmax}
+
 
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -19,8 +22,6 @@
 %\usepackage{helvet}
 %\usepackage{bookman}
 \usepackage{palatino}
-
-\newcommand{\captionfont}{\footnotesize}
 
 \graphicspath{{images/}{../images/}}
 \usetikzlibrary{calc}
@@ -220,14 +221,17 @@ Our algorithm shows that rock$_1$ and rock$_3$ are likely to be pseudo multi-sen
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{center}
       \includegraphics[width=0.5\linewidth]{orig}
+	  \\ \vspace{-0.8em}
+	  \captionof{figure}{How the global transform matrix works. In the case, w$_1$, w$_2$ and $w_3$ are senses produced by previous word embedding algorithm automatically. We detect w$_1$ and w$_2$ have the same meaning in fact while w$_3$ has a different meaning.}
 	  \end{center}
       \begin{multicols}{2}
-    Between one and three user clicks were needed to achieve accurate tracking for
-      the head sequence. Note the correct handling of the occluded ear, which
-      required only a single click. 
-
-      The eye of the running giraffe required eight user interactions, of which three
-      marked occlusions. 
+    Having the existing word embeddings, assume that we have a detected pseudo multi-sense group $G = \{w_{k_1}, w_{k_2}, ... , w_{k_n}\}$, in which $w_{k_1}, w_{k_2}, ... , w_{k_n}$ are senses of word $w$, taking the same meaning. Thus, we can find a representative vector for the group. Let $v_s(w,k_i)$ be the corresponding vectors of $w_{k_i}$, and $v_r(G)$ be the representative vector for the group $G$. Such vector $v_r(G)$ can be randomly chosen from $\{v_s(w,k_1), v_s(w,k_2), ..., v_s(w,k_n)\}$, or simply the mean vector of them. Other methods to compute $v_r(G)$ are also worth trying if reasonable. 
+	\par
+	Assume there is a transition matrix, by which for all pseudo multi-sense group $G$, $\forall w_{k_i} \in G$, $v_{w_{k_i}}$ can be projected to $v_r(G)$. In other words, we suggest that there exists a global matrix $\Phi$, for any given pseudo multi-sense group $G = \{w_{k_1}, w_{k_2}, ... , w_{k_n}\}$ and its representative vector $v_r(G)$, we have
+\begin{equation}
+v_r(G) = \Phi * v_s(w, k_i), \forall w_{k_i} \in G, \forall G \nonumber
+\end{equation}
+	Thus we can eliminate pseudo multi-sense by applying $\Phi$ to the original vector space.
       \end{multicols}
       \vspace{-0.6em}
 }
@@ -269,58 +273,47 @@ This work is supported by the National Natural Science Foundation of China (gran
 \headerbox{Experiments}{name=experiments,column=2,span=2,row=0,below=elimination,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{multicols}{2}
-\newcommand{\basiswidth}{0.22}
-\newcommand{\basisskip}{0.04} % (1-4*\basiswidth)/3
-\newcommand{\imagegrid}[1]{
-\begin{tabular}{@{}
-  c@{\hspace{\basisskip\linewidth}}%
-  c@{\hspace{\basisskip\linewidth}}%
-  c@{\hspace{\basisskip\linewidth}}%
-  c@{}}
-  %
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-01} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-02} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-03} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-04} \\
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-05} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-06} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-07} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-08} \\
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-09} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-10} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-11} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-12} \\
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-13} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-14} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-15} &
-\includegraphics[width=\basiswidth\linewidth,height=\basiswidth\linewidth,keepaspectratio]{#1-16} 
-\end{tabular}
-}
-\noindent\begin{tabular}{@{}ccc@{}}
-\begin{minipage}{0.3\linewidth}
-  \includegraphics[width=\linewidth]{basis-giraffe-example-frame}\\[1em]
-\end{minipage}&
-\begin{minipage}{0.3\linewidth}
-  \imagegrid{basis-giraffe-basis}
-\end{minipage}&
-\begin{minipage}{0.3\linewidth}
-  \imagegrid{basis-giraffe-response}
-\end{minipage}\\
-\smaller Image &\smaller  Filter Bank &\smaller  Response
-\end{tabular}\\[1em]
-\indent{}Speed is achieved by preprocessing the video with an adaptive filter
-bank as in~\cite{awf:tracking}. Preprocessing was sped up significantly, but is
-still slower than realtime.
-
-This encodes the video into 16 byte per pixel feature vectors. We implemented
-an efficient search for similar patches using the SIMD hardware of modern
-processors, and only evaluate the cost on these candidate patches. (Typically
-200 patches per frame). Candidate search and reasoning are highly efficient
-resulting in an interactive system.
-
-Note that the preprocessing is not specific to the interestpoints tracked
-later. A single preprocessed video can therefore be used in many annotation
-sessions.
+	\begin{center}
+      \includegraphics[width=\linewidth]{flow}
+	  \\ \vspace{-0.8em}
+	  \captionof{figure}{The pipeline of our experiment.}
+	  \end{center}
+\noindent \textbf{\large Local Word Similarity}
+\par
+We evaluate our algorithm by applying it to the word vectors released by Huang et al.(\cite{huang}) and Neelakantan et al.(\cite{neelakantan}), and comparing the word similarity on SCWS dataset(\cite{huang}). The experiment shows that our algorithm gains a significant improvement on localSim metric, which is defined as 
+\begin{equation}
+localSim(w,w') = s(v_s(w,k), v_s(w',k'))\nonumber
+\end{equation}
+where $k = \mathop{\argmax}_i P(w,c,i)$, $k' = \mathop{\argmax}_{i'} P(w',c',i')$.
+\begin{center}
+ \begin{tabular}{|c|cc|}
+ \hline
+ \multirow{1}{*}{\textbf{Original Vectors}} &\multicolumn{2}{c|}{\textbf{localSim}} \\
+\textbf{(Model)} & orig & trans \\
+ \hline 
+ Huang et al.  & 26.1 & \textbf{37.6} \\
+ MSSG 50d & 49.2 &\textbf{53.2} \\
+ MSSG 300d & 57.3 &\textbf{62.2}\\
+ \hline
+ \end{tabular}
+ \captionof{table}{The performance of the original vectors and that of the vectors after transformation, on localSim metric.}
+\end{center}
+\noindent \textbf{\large Analogy}
+\par
+Analogy task evaluate the performance of word vectors on quadruples $(a,b,c,d)$ with the equation $v(a)-v(b) = v(c)-v(d)$. The quadruples can be (Beijing, China, Paris, France), or (great,greater,tough,tougher) etc. The experiment shows that our pseudo multi-sense eliminating algorithm improves the vectors' performance on analogy task.
+ \begin{center}
+ \begin{tabular}{|c|cc|cc|}
+ \hline
+ \multirow{1}{*}{\textbf{Model}} &\multicolumn{2}{c}{\textbf{Semantic}} & \multicolumn{2}{|c|}{\textbf{Syntactic}}  \\
+ & orig & trans & orig & trans \\
+ \hline 
+ Huang et al. & 52.8 & \textbf{53.5} & 53.5 & \textbf{56.1}\\
+ MSSG 50d &  75.8 & \textbf{77.5}  & 85.2 & \textbf{88.0}\\
+ MSSG 300d & 92.0 & \textbf{93.1} & 93.3& \textbf{94.5}\\
+ \hline
+ \end{tabular}
+ \captionof{table}{\label{analogy} Evaluation result on analogy task. }
+ \end{center}
 \end{multicols}
    \vspace{0.0em}
   }

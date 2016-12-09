@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  9 DEC 2016 01:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  9 DEC 2016 12:23
 entering extended mode
 **./poster_landscape.tex
 (poster_landscape.tex
@@ -624,25 +624,44 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ("C:\Users\hyshi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
 sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\hyshi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+("C:\Users\hyshi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen180
+\captionmargin@=\dimen181
+\captionwidth=\dimen182
+\caption@tempdima=\dimen183
+\caption@indent=\dimen184
+\caption@parindent=\dimen185
+\caption@hangindent=\dimen186
+)
+\c@ContinuedFloat=\count134
+Package caption Info: rotating package is loaded.
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
-\c@tracingmulticols=\count134
+\c@tracingmulticols=\count135
 \mult@box=\box47
-\multicol@leftmargin=\dimen180
-\c@unbalance=\count135
-\c@collectmore=\count136
-\doublecol@number=\count137
-\multicoltolerance=\count138
-\multicolpretolerance=\count139
-\full@width=\dimen181
-\page@free=\dimen182
-\premulticols=\dimen183
-\postmulticols=\dimen184
+\multicol@leftmargin=\dimen187
+\c@unbalance=\count136
+\c@collectmore=\count137
+\doublecol@number=\count138
+\multicoltolerance=\count139
+\multicolpretolerance=\count140
+\full@width=\dimen188
+\page@free=\dimen189
+\premulticols=\dimen190
+\postmulticols=\dimen191
 \multicolsep=\skip74
 \multicolbaselineskip=\skip75
 \partial@page=\box48
 \last@line=\box49
-\maxbalancingoverflow=\dimen185
+\maxbalancingoverflow=\dimen192
 \mult@rightbox=\box50
 \mult@grightbox=\box51
 \mult@gfirstbox=\box52
@@ -664,14 +683,14 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box68
 \@tempa=\box69
 \@tempa=\box70
-\c@columnbadness=\count140
-\c@finalcolumnbadness=\count141
-\last@try=\dimen186
-\multicolovershoot=\dimen187
-\multicolundershoot=\dimen188
+\c@columnbadness=\count141
+\c@finalcolumnbadness=\count142
+\last@try=\dimen193
+\multicolovershoot=\dimen194
+\multicolundershoot=\dimen195
 \mult@nat@firstbox=\box71
 \colbreak@box=\box72
-\mc@col@check@num=\count142
+\mc@col@check@num=\count143
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\palatino.sty"
 Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
@@ -683,19 +702,19 @@ LaTeX Warning: Unused global option(s):
 (poster_landscape.aux)
 \openout1 = `poster_landscape.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 68.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -703,16 +722,16 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ("C:\Users\hyshi\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count143
-\scratchdimen=\dimen189
+\scratchcounter=\count144
+\scratchdimen=\dimen196
 \scratchbox=\box73
-\nofMPsegments=\count144
-\nofMParguments=\count145
+\nofMPsegments=\count145
+\nofMParguments=\count146
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count146
-\MPscratchDim=\dimen190
-\MPnumerator=\count147
-\makeMPintoPDFobject=\count148
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen197
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
 \everyMPtoPDFconversion=\toks36
 ) ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -749,22 +768,24 @@ ii"
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 \FSZ=\skip76
 <images/logo.jpg, id=28, 372.39125pt x 372.39125pt>
 File: images/logo.jpg Graphic file (type jpg)
  <use images/logo.jpg>
-Package pdftex.def Info: images/logo.jpg used on input line 149.
+Package pdftex.def Info: images/logo.jpg used on input line 150.
 (pdftex.def)             Requested size: 74.9997pt x 75.0pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 149.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 149.
-LaTeX Font Info:    Try loading font information for U+msa on input line 149.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 150.
+LaTeX Font Info:    Try loading font information for U+msa on input line 150.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 149.
+LaTeX Font Info:    Try loading font information for U+msb on input line 150.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -772,24 +793,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 173.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 174.
 LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 173.
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 174.
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 216.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 217.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 216.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 217.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -797,7 +818,7 @@ Missing character: There is no ; in font nullfont!
 <images/orig.jpg, id=32, 889.07156pt x 316.18124pt>
 File: images/orig.jpg Graphic file (type jpg)
  <use images/orig.jpg>
-Package pdftex.def Info: images/orig.jpg used on input line 233.
+Package pdftex.def Info: images/orig.jpg used on input line 237.
 (pdftex.def)             Requested size: 273.07623pt x 97.11298pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -809,295 +830,16 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-<images/basis-giraffe-example-frame.png, id=33, 481.8pt x 361.35pt>
-File: images/basis-giraffe-example-frame.png Graphic file (type png)
-
-<use images/basis-giraffe-example-frame.png>
-Package pdftex.def Info: images/basis-giraffe-example-frame.png used on input l
-ine 326.
-(pdftex.def)             Requested size: 79.67422pt x 59.7525pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-
- []
-
-<images/basis-giraffe-basis-01.png, id=34, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-01.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-01.png>
-Package pdftex.def Info: images/basis-giraffe-basis-01.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-02.png, id=35, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-02.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-02.png>
-Package pdftex.def Info: images/basis-giraffe-basis-02.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-03.png, id=36, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-03.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-03.png>
-Package pdftex.def Info: images/basis-giraffe-basis-03.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-04.png, id=37, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-04.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-04.png>
-Package pdftex.def Info: images/basis-giraffe-basis-04.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-05.png, id=38, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-05.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-05.png>
-Package pdftex.def Info: images/basis-giraffe-basis-05.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-06.png, id=39, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-06.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-06.png>
-Package pdftex.def Info: images/basis-giraffe-basis-06.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-07.png, id=40, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-07.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-07.png>
-Package pdftex.def Info: images/basis-giraffe-basis-07.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-08.png, id=41, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-08.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-08.png>
-Package pdftex.def Info: images/basis-giraffe-basis-08.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-09.png, id=42, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-09.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-09.png>
-Package pdftex.def Info: images/basis-giraffe-basis-09.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-10.png, id=43, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-10.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-10.png>
-Package pdftex.def Info: images/basis-giraffe-basis-10.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-11.png, id=44, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-11.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-11.png>
-Package pdftex.def Info: images/basis-giraffe-basis-11.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-12.png, id=45, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-12.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-12.png>
-Package pdftex.def Info: images/basis-giraffe-basis-12.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-13.png, id=46, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-13.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-13.png>
-Package pdftex.def Info: images/basis-giraffe-basis-13.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-14.png, id=47, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-14.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-14.png>
-Package pdftex.def Info: images/basis-giraffe-basis-14.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-15.png, id=48, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-15.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-15.png>
-Package pdftex.def Info: images/basis-giraffe-basis-15.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-<images/basis-giraffe-basis-16.png, id=49, 19.07124pt x 19.07124pt>
-File: images/basis-giraffe-basis-16.png Graphic file (type png)
-
-<use images/basis-giraffe-basis-16.png>
-Package pdftex.def Info: images/basis-giraffe-basis-16.png used on input line 3
-26.
-(pdftex.def)             Requested size: 17.52914pt x 17.52914pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-
- []
-
-<images/basis-giraffe-response-01.png, id=50, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-01.png Graphic file (type png)
-
-<use images/basis-giraffe-response-01.png>
-Package pdftex.def Info: images/basis-giraffe-response-01.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-02.png, id=51, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-02.png Graphic file (type png)
-
-<use images/basis-giraffe-response-02.png>
-Package pdftex.def Info: images/basis-giraffe-response-02.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-03.png, id=52, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-03.png Graphic file (type png)
-
-<use images/basis-giraffe-response-03.png>
-Package pdftex.def Info: images/basis-giraffe-response-03.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-04.png, id=53, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-04.png Graphic file (type png)
-
-<use images/basis-giraffe-response-04.png>
-Package pdftex.def Info: images/basis-giraffe-response-04.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-05.png, id=54, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-05.png Graphic file (type png)
-
-<use images/basis-giraffe-response-05.png>
-Package pdftex.def Info: images/basis-giraffe-response-05.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-06.png, id=55, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-06.png Graphic file (type png)
-
-<use images/basis-giraffe-response-06.png>
-Package pdftex.def Info: images/basis-giraffe-response-06.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-07.png, id=56, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-07.png Graphic file (type png)
-
-<use images/basis-giraffe-response-07.png>
-Package pdftex.def Info: images/basis-giraffe-response-07.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-08.png, id=57, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-08.png Graphic file (type png)
-
-<use images/basis-giraffe-response-08.png>
-Package pdftex.def Info: images/basis-giraffe-response-08.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-09.png, id=58, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-09.png Graphic file (type png)
-
-<use images/basis-giraffe-response-09.png>
-Package pdftex.def Info: images/basis-giraffe-response-09.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-10.png, id=59, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-10.png Graphic file (type png)
-
-<use images/basis-giraffe-response-10.png>
-Package pdftex.def Info: images/basis-giraffe-response-10.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-11.png, id=60, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-11.png Graphic file (type png)
-
-<use images/basis-giraffe-response-11.png>
-Package pdftex.def Info: images/basis-giraffe-response-11.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-12.png, id=61, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-12.png Graphic file (type png)
-
-<use images/basis-giraffe-response-12.png>
-Package pdftex.def Info: images/basis-giraffe-response-12.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-13.png, id=62, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-13.png Graphic file (type png)
-
-<use images/basis-giraffe-response-13.png>
-Package pdftex.def Info: images/basis-giraffe-response-13.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-14.png, id=63, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-14.png Graphic file (type png)
-
-<use images/basis-giraffe-response-14.png>
-Package pdftex.def Info: images/basis-giraffe-response-14.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-15.png, id=64, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-15.png Graphic file (type png)
-
-<use images/basis-giraffe-response-15.png>
-Package pdftex.def Info: images/basis-giraffe-response-15.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-<images/basis-giraffe-response-16.png, id=65, 481.8pt x 361.35pt>
-File: images/basis-giraffe-response-16.png Graphic file (type png)
-
-<use images/basis-giraffe-response-16.png>
-Package pdftex.def Info: images/basis-giraffe-response-16.png used on input lin
-e 326.
-(pdftex.def)             Requested size: 17.52637pt x 13.14478pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-
- []
-
-
-LaTeX Warning: Citation `awf:tracking' on page 1 undefined on input line 326.
-
+<images/flow.jpg, id=33, 862.422pt x 353.6412pt>
+File: images/flow.jpg Graphic file (type jpg)
+ <use images/flow.jpg>
+Package pdftex.def Info: images/flow.jpg used on input line 319.
+(pdftex.def)             Requested size: 265.57806pt x 108.89915pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 6978) in paragraph at lines 351--351
+Underfull \hbox (badness 6978) in paragraph at lines 344--344
 []\T1/ppl/m/n/10 emerald, \T1/ppl/b/n/10 bears\T1/ppl/m/n/10 , \T1/ppl/b/n/10 t
 hree-toed\T1/ppl/m/n/10 , \T1/ppl/b/n/10 snake\T1/ppl/m/n/10 , \T1/ppl/b/n/10 p
 eri-win-kle\T1/ppl/m/n/10 ,
@@ -1109,56 +851,34 @@ Missing character: There is no ; in font nullfont!
 [2
 
 {C:/Users/hyshi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/lo
-go.jpg> <./images/orig.jpg> <./images/basis-giraffe-example-frame.png (PNG copy
-)> <./images/basis-giraffe-basis-01.png (PNG copy)> <./images/basis-giraffe-bas
-is-02.png (PNG copy)> <./images/basis-giraffe-basis-03.png (PNG copy)> <./image
-s/basis-giraffe-basis-04.png (PNG copy)> <./images/basis-giraffe-basis-05.png (
-PNG copy)> <./images/basis-giraffe-basis-06.png (PNG copy)> <./images/basis-gir
-affe-basis-07.png (PNG copy)> <./images/basis-giraffe-basis-08.png (PNG copy)> 
-<./images/basis-giraffe-basis-09.png (PNG copy)> <./images/basis-giraffe-basis-
-10.png (PNG copy)> <./images/basis-giraffe-basis-11.png (PNG copy)> <./images/b
-asis-giraffe-basis-12.png (PNG copy)> <./images/basis-giraffe-basis-13.png (PNG
- copy)> <./images/basis-giraffe-basis-14.png (PNG copy)> <./images/basis-giraff
-e-basis-15.png (PNG copy)> <./images/basis-giraffe-basis-16.png (PNG copy)> <./
-images/basis-giraffe-response-01.png (PNG copy)> <./images/basis-giraffe-respon
-se-02.png (PNG copy)> <./images/basis-giraffe-response-03.png (PNG copy)> <./im
-ages/basis-giraffe-response-04.png (PNG copy)> <./images/basis-giraffe-response
--05.png (PNG copy)> <./images/basis-giraffe-response-06.png (PNG copy)> <./imag
-es/basis-giraffe-response-07.png (PNG copy)> <./images/basis-giraffe-response-0
-8.png (PNG copy)> <./images/basis-giraffe-response-09.png (PNG copy)> <./images
-/basis-giraffe-response-10.png (PNG copy)> <./images/basis-giraffe-response-11.
-png (PNG copy)> <./images/basis-giraffe-response-12.png (PNG copy)> <./images/b
-asis-giraffe-response-13.png (PNG copy)> <./images/basis-giraffe-response-14.pn
-g (PNG copy)> <./images/basis-giraffe-response-15.png (PNG copy)> <./images/bas
-is-giraffe-response-16.png (PNG copy)>] (poster_landscape.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+go.jpg> <./images/orig.jpg> <./images/flow.jpg>] (poster_landscape.aux) ) 
 Here is how much of TeX's memory you used:
- 15479 strings out of 493634
- 322680 string characters out of 3141315
- 396776 words of memory out of 3000000
- 18489 multiletter control sequences out of 15000+200000
+ 16381 strings out of 493634
+ 336002 string characters out of 3141315
+ 411473 words of memory out of 3000000
+ 19417 multiletter control sequences out of 15000+200000
  25662 words of font info for 53 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
- 62i,24n,76p,687b,1091s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
-rw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplri8a.pfb>
-Output written on poster_landscape.pdf (1 page, 1151670 bytes).
+ 62i,14n,92p,687b,1004s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pala
+tino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/upl
+r8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb
+>
+Output written on poster_landscape.pdf (1 page, 416913 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
